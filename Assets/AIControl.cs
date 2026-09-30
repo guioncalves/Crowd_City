@@ -15,11 +15,17 @@ public class AIControl : MonoBehaviour {
         goalLocations = GameObject.FindGameObjectsWithTag("goal");
         int i = Random.Range(0,goalLocations.Length);
         agent.SetDestination(goalLocations[i].transform.position);
+        anim = this.GetComponent<Animator>();
+        anim.SetTrigger("isWalking");
       
     }
 
 
     void Update() {
-
+        if(agent.remainingDistance < 1)
+        {
+            int i = Random.Range(0, goalLocations.Length);
+            agent.SetDestination(goalLocations[i].transform.position);
+        }
     }
 }
