@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DropCylinder : MonoBehaviour
@@ -7,21 +5,23 @@ public class DropCylinder : MonoBehaviour
     public GameObject obstacle;
     GameObject[] agents;
 
-    // Start is called before the first frame update
     void Start()
     {
         agents = GameObject.FindGameObjectsWithTag("agent");
+
+        Debug.Log("NPCs encontrados: " + agents.Length);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hitInfo;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray =
+                Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray.origin, ray.direction, out hitInfo))
+            RaycastHit hitInfo;
+
+            if (Physics.Raycast(ray, out hitInfo))
             {
                 Instantiate(
                     obstacle,
@@ -29,13 +29,21 @@ public class DropCylinder : MonoBehaviour
                     obstacle.transform.rotation
                 );
 
+                Debug.Log(
+                    "Cilindro colocado em: " +
+                    hitInfo.point
+                );
+
                 foreach (GameObject a in agents)
                 {
-                    // Aqui depois colocamos o comportamento
-                    // de cada agente quando aparece o obstáculo.
+                    AIControl ai = a.GetComponent<AIControl>();
+
+                    if (ai != null)
+                    {
+                        ai.DetectNewObstacle(hitInfo.point);
+                    }
                 }
             }
         }
     }
-
 }
