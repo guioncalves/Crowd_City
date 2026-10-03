@@ -8,7 +8,7 @@ public class AIControl : MonoBehaviour
     private NavMeshAgent agent;
     private Animator anim;
 
-    public float normalSpeed = 3.5f;
+    public float normalSpeed = 1f;
     public float fleeSpeed = 10f;
 
     public float detectionRadius = 20f;
@@ -136,7 +136,7 @@ public class AIControl : MonoBehaviour
 
                 Debug.Log(
                     gameObject.name +
-                    " terminou FLEE | Speed = " +
+                    " terminou Flee/Speed Mode = " +
                     agent.speed
                 );
             }

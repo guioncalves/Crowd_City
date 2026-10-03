@@ -1369,6 +1369,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &113080652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1687,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &163755200
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1980,6 +1988,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 3.5
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &200933861
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2416,6 +2428,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &228718510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,6 +2852,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &255766653
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3247,6 +3267,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 3.5
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &282941919
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3435,6 +3459,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &310653334
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4046,6 +4074,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 3.5
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &362880445
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4659,6 +4691,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &428312365
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5282,6 +5318,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &498788334
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6390,6 +6430,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &596099261
 GameObject:
   m_ObjectHideFlags: 0
@@ -6726,6 +6770,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &659006050
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7019,6 +7067,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 3.5
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &683515090
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7519,6 +7571,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &752472261
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9338,6 +9394,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &1047364685
 GameObject:
   m_ObjectHideFlags: 0
@@ -10942,6 +11002,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &1264002219
 GameObject:
   m_ObjectHideFlags: 0
@@ -12680,6 +12744,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &1422190675
 GameObject:
   m_ObjectHideFlags: 0
@@ -12802,6 +12870,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &1424989555
 GameObject:
   m_ObjectHideFlags: 0
@@ -13150,6 +13222,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &1452726348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 28b9d4414d24c4fddb2bdbdae494d017, type: 3}
@@ -13174,6 +13250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1452726351
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13673,6 +13753,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1534829566
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13925,6 +14009,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1559229822
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16155,6 +16243,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &1624442458
 GameObject:
   m_ObjectHideFlags: 0
@@ -20582,6 +20674,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 3.5
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1698756918
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20991,6 +21087,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1744649752
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -21172,6 +21272,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!95 &1755384224
 Animator:
   serializedVersion: 5
@@ -21376,6 +21480,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1795853057
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22339,6 +22447,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1900527878
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23150,6 +23262,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 3.5
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &1976494890
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23424,6 +23540,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &2007357607
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23618,6 +23738,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &2017500771
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -23750,6 +23874,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1901545398}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &2043753224
 GameObject:
   m_ObjectHideFlags: 0
@@ -24162,6 +24290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &2080021695
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24536,6 +24668,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 3.5
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!195 &2120436785
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24737,6 +24873,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalLocations:
   - {fileID: 1922642961}
+  normalSpeed: 1
+  fleeSpeed: 10
+  detectionRadius: 20
+  fleeRadius: 10
 --- !u!1 &2139949158
 GameObject:
   m_ObjectHideFlags: 0
