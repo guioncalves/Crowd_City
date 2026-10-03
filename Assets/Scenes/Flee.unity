@@ -121,7 +121,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 6ab54918063d1be49b1f01b38e6a5549, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 44e22aa42137baa4cbd23770c61ac47c, type: 2}
 --- !u!1 &17760029
 GameObject:
   m_ObjectHideFlags: 0
@@ -6789,6 +6789,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: f1ef8110b65446741a78c2a74c2371ac, type: 3}
       propertyPath: m_Name
       value: FPSController
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f1ef8110b65446741a78c2a74c2371ac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f1ef8110b65446741a78c2a74c2371ac, type: 3}
       propertyPath: m_TagString
@@ -17225,10 +17229,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1770060540}
   - component: {fileID: 1770060539}
+  - component: {fileID: 1770060541}
   - component: {fileID: 1770060538}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17264,9 +17269,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.01
+  far clip plane: 94.2
+  field of view: 24.8
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -17291,14 +17296,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770060537}
-  m_LocalRotation: {x: -0.22512513, y: 0.21622398, z: -0.051312447, w: -0.948648}
-  m_LocalPosition: {x: 71.7, y: 5.9, z: -59.5}
+  m_LocalRotation: {x: -0.11014496, y: 0.19530097, z: -0.022079103, w: -0.9742885}
+  m_LocalPosition: {x: 82, y: 4, z: -62.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 26.7, y: -385.68, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.9, y: -382.67, z: 0}
+--- !u!114 &1770060541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770060537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95abdd8d22a7a3149903cf7a815aef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle: {fileID: 6767553646906291114, guid: 799d393a81b94294e9e207a1ce5fe5f1, type: 3}
 --- !u!1 &1778585567
 GameObject:
   m_ObjectHideFlags: 0

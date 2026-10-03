@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DropCylinder: MonoBehaviour
+public class DropCylinder : MonoBehaviour
 {
     public GameObject obstacle;
-    GameObject[] agents; 
+    GameObject[] agents;
 
     // Start is called before the first frame update
     void Start()
     {
-        agents = GameObject.FindGameObjectWithTag("agent");
+        agents = GameObject.FindGameObjectsWithTag("agent");
     }
 
     // Update is called once per frame
@@ -20,15 +20,22 @@ public class DropCylinder: MonoBehaviour
         {
             RaycastHit hitInfo;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if(Physics.Raycast(ray.origin, ray.direction, out hitInfo))
-            {
-                Instantiate(obstacle, hitInfo.point, obstacle.transform.rotation);
-                foreach(GameObject a in agents)
-                {
 
+            if (Physics.Raycast(ray.origin, ray.direction, out hitInfo))
+            {
+                Instantiate(
+                    obstacle,
+                    hitInfo.point,
+                    obstacle.transform.rotation
+                );
+
+                foreach (GameObject a in agents)
+                {
+                    // Aqui depois colocamos o comportamento
+                    // de cada agente quando aparece o obstáculo.
                 }
             }
         }
-        
     }
+
 }
