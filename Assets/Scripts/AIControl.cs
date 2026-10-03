@@ -5,8 +5,8 @@ public class AIControl : MonoBehaviour
 {
     public GameObject[] goalLocations;
 
-    NavMeshAgent agent;
-    Animator anim;
+    private NavMeshAgent agent;
+    private Animator anim;
 
     public float normalSpeed = 3.5f;
     public float fleeSpeed = 10f;
@@ -14,7 +14,7 @@ public class AIControl : MonoBehaviour
     public float detectionRadius = 20f;
     public float fleeRadius = 10f;
 
-    bool isFleeing = false;
+    private bool isFleeing = false;
 
     void Start()
     {
@@ -23,11 +23,11 @@ public class AIControl : MonoBehaviour
 
         goalLocations = GameObject.FindGameObjectsWithTag("goal");
 
-        // Todos começam à mesma velocidade
+        // Movimento normal
         agent.speed = normalSpeed;
         agent.angularSpeed = 120f;
 
-        // Animação de caminhada
+        // Animação normal
         anim.SetFloat("SpeedMult", 1f);
         anim.SetFloat("Woffset", Random.Range(0f, 1f));
         anim.SetTrigger("isWalking");
@@ -60,14 +60,27 @@ public class AIControl : MonoBehaviour
             obstaclePosition
         );
 
+        Debug.Log(
+            gameObject.name +
+            " | Distância ao cilindro: " +
+            distance
+        );
+
+        // Está suficientemente perto do cilindro?
         if (distance <= detectionRadius)
         {
-            // Direção para LONGE do cilindro
+            Debug.Log(
+                gameObject.name +
+                " ENTROU EM FLEE MODE!"
+            );
+
+            // Direção PARA LONGE do cilindro
             Vector3 fleeDirection =
                 (transform.position - obstaclePosition).normalized;
 
             Vector3 desiredPosition =
-                transform.position + fleeDirection * fleeRadius;
+                transform.position +
+                fleeDirection * fleeRadius;
 
             NavMeshHit hit;
 
@@ -79,18 +92,21 @@ public class AIControl : MonoBehaviour
             {
                 isFleeing = true;
 
-                // FLEE MODE
+                // Acelera
                 agent.speed = fleeSpeed;
                 agent.angularSpeed = 500f;
 
-                anim.SetFloat("SpeedMult", 2f);
+                // Muda Walking -> Running
+                anim.ResetTrigger("isWalking");
+                anim.SetFloat("SpeedMult", 1f);
                 anim.SetTrigger("isRunning");
 
+                // Foge
                 agent.SetDestination(hit.position);
 
                 Debug.Log(
                     gameObject.name +
-                    " entrou em FLEE MODE | Speed: " +
+                    " A CORRER | Speed = " +
                     agent.speed
                 );
             }
@@ -106,19 +122,21 @@ public class AIControl : MonoBehaviour
         {
             if (isFleeing)
             {
-                // Acabou o pânico
+                // Acabou de fugir
                 isFleeing = false;
 
+                // Volta à velocidade normal
                 agent.speed = normalSpeed;
                 agent.angularSpeed = 120f;
 
-                // Volta à animação normal
+                // Running -> Walking
+                anim.ResetTrigger("isRunning");
                 anim.SetFloat("SpeedMult", 1f);
                 anim.SetTrigger("isWalking");
 
                 Debug.Log(
                     gameObject.name +
-                    " terminou FLEE | Speed: " +
+                    " terminou FLEE | Speed = " +
                     agent.speed
                 );
             }
